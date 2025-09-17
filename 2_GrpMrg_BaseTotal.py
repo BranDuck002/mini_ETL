@@ -1,4 +1,7 @@
+#%%
+#pandas openpyxl
 import pandas as pd
+
 #%% Cargamos todas las bases agrupadas y las juntamos en un solo DF
 
 ruta_trabajo = "C:/Users/cgonzalezb/Downloads/SeminarioTit/ProyectoEquipo4/BasesProyecto/"
