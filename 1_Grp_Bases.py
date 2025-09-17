@@ -1,5 +1,5 @@
 #%%
-#pandas openpyxl
+#Requerimientos: pandas openpyxl
 import pandas as pd
 
 #%%
