@@ -8,8 +8,7 @@ def QuitarMultiplicados(PD_DataFrame, columnaIDs):
     lista_IDs = tabla_frecuencia[ tabla_frecuencia > 1 ].index.tolist()
     print(f"Cantidad de IDs con duplicados: {len(lista_IDs)}")
     for ID in lista_IDs:
-        #df_block = pd.DataFrame(columns= PD_DataFrame.columns)
-        #df_block = pd.concat([df_block, PD_DataFrame[:][PD_DataFrame[columnaIDs] == ID]], ignore_index=True) 
+        
         df_block = PD_DataFrame[:][PD_DataFrame[columnaIDs] == ID]
         PD_DataFrame = PD_DataFrame[:][PD_DataFrame[columnaIDs] != ID]
         PD_DataFrame = pd.concat([PD_DataFrame, df_block.iloc[[0],:]], ignore_index=True)
