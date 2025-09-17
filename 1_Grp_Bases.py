@@ -1,7 +1,6 @@
 #%%
 #pandas openpyxl
 import pandas as pd
-print("Hola, mundo!")
 
 #%%
 def QuitarMultiplicados(PD_DataFrame, columnaIDs):
